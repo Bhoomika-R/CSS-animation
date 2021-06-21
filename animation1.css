@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  background-color: rgba(12, 10, 10, 0.904) ;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: transparent;
+}
+h1::before {
+    width: 100%;
+    content: attr(data-text);
+    border-right: 10px solid rgba(255, 0, 0, 0.438);
+    overflow: hidden;
+    color: white;
+    position: absolute;
+    animation: typing 8s steps(23) infinite;
+    white-space: nowrap;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+
+
